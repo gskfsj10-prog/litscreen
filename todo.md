@@ -1,9 +1,9 @@
 # Litscreen TODO
 
 ## Backend API
-- [x] Backend proxy: GET /api/tokens — fetch graduated tokens from onmi.fun with pagination, sort, filter
-- [x] Backend proxy: GET /api/tokens/:address — fetch single token detail
-- [x] Backend proxy: GET /api/trades — fetch latest trades from onmi.fun
+- [x] Backend proxy: tRPC onmi.tokens — fetch graduated tokens from onmi.fun with pagination, sort, filter
+- [x] Backend proxy: tRPC onmi.tokenDetail — fetch single token detail (fixed: batch fetch to work around broken onmi.fun API)
+- [x] Backend proxy: tRPC onmi.trades — fetch latest trades from onmi.fun
 
 ## Frontend Foundation
 - [x] Dark cyberpunk theme (neon accents, monospace fonts for numbers)
@@ -29,6 +29,10 @@
 - [x] Latest trades feed panel (uses api/trades/latest?chainId=4441)
 - [x] Auto-polling trades feed
 
+## Bug Fixes
+- [x] Fixed token detail page showing wrong token — onmi.fun's address filter was broken, implemented batch fetching workaround
+
 ## Tests
 - [x] Vitest: backend tokens proxy route
 - [x] Vitest: backend trades proxy route
+- [x] Vitest: backend tokenTrades proxy route
