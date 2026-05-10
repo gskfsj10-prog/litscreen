@@ -13,10 +13,12 @@
 
 ## Token Listing Page
 - [x] DexScreener-style data table with: name, symbol, logo, price, market cap, graduation date
+- [x] Redesigned to card grid layout (4 columns, 20 tokens per page) matching reference design
 - [x] Sorting controls: by market cap, price, graduation date
 - [x] Search/filter by name or symbol
-- [x] Pagination / infinite scroll for 109,000+ tokens
+- [x] Pagination for 114,770+ graduated tokens
 - [x] Auto-refresh polling for live price/market cap updates
+- [x] Each card shows: logo, name, symbol, creator, price, market cap, 24h change, progress bar
 
 ## Token Detail Page
 - [x] Full token info: name, symbol, description, image
